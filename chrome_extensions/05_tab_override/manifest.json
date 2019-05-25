@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "Coding Cat Tab Override",
+    "version": "0.1",
+    "content_scripts": [{
+        "matches": [
+            "<all_urls>"
+        ],
+        "js": ["content.js"]
+    }],
+
+    "browser_action": {
+        "default_popup": "sketch/index.html"
+    },
+    "chrome_url_overrides": {
+        "newtab": "sketch/index.html"
+    },
+
+
+    "icons": {
+        "128": "icon.png"
+
+    }
+
+}
