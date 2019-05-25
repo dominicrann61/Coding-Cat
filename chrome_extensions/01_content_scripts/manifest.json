@@ -1,0 +1,14 @@
+{
+    "manifest_version": 2,
+    "name": "The Coding Cat Content Scripts",
+    "version": "0.1",
+    "content_scripts": [{
+        "matches": [
+            "<all_urls>"
+        ],
+        "js": ["content.js"]
+    }],
+    "browser_action": {
+        "defualt_icon": "atom.png"
+    }
+}
